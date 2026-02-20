@@ -1,0 +1,63 @@
+# Test Cases 
+
+1] Create a program that gives different messages based on time of day.
+hour = int(input("Enter the current hour(0-23):"))
+if hour < 12:
+  print("GOOD MORNING!")
+elif hour < 18:
+  print("GOOD AFTERNOON!")
+else:
+  print("GOOD EVENING!")
+
+2] Build a number guessing game using if-else statements.
+secret_number = 7
+guess = int(input("Guess the secret number(1-10):"))
+if guess == secret_number:
+  print("Correct!, You guessed it Right!")
+else:
+  print("Wrong!, Try Again.")
+
+3] Use for loop to print numbers from 1 to 100.
+for i in range(1, 101):
+  print(i)
+
+4] Create a function that calculates area of rectangle.
+def rectangle_area(length, width):
+    return length * width
+print("Area of rectangle:", rectangle_area(5, 5))
+
+5] Make a simple calculator that can add, subtract, multiply, divide.
+num_1 = int(input("Enter the first number:"))
+num_2 = int(input("Enter the second number:"))
+print("Addition:", num_1 + num_2)
+print("Subtraction:", num_1 - num_2)
+print("Multiplication:", num_1 * num_2)
+if num_2 != 0:
+    print("Division:", num_1 / num_2)
+else:
+    print("Cannot divide by zero!")
+
+6] Practice with real-life scenarios: grading system, age categories
+# Grading System
+marks = int(input("Enter your marks: "))
+
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 75:
+    print("Grade: B")
+elif marks >= 50:
+    print("Grade: C")
+else:
+    print("Grade: F")
+
+# Age Categories
+age = int(input("Enter your age: "))
+
+if age < 13:
+    print("You are a Child")
+elif age < 20:
+    print("You are a Teenager")
+elif age < 60:
+    print("You are an Adult")
+else:
+    print("You are a Senior Citizen")
